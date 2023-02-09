@@ -1,0 +1,99 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Zdravo, ja sam Odgobot. Kako mogu da pomognem?",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.Execute",
+                                    "title": "Kreiraj odgovaranje",
+                                    "verb": "kreairajOdogovaranje"
+                                }
+                            ]
+                        }
+                    ],
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.Execute",
+                                    "title": "Promeni sifru",
+                                    "verb": "promeniSifru"
+                                }
+                            ]
+                        }
+                    ],
+                    "horizontalAlignment": "Right"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": 50,
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.Execute",
+                                                    "title": "Nastavi poslednje odgovaranje",
+                                                    "verb": "nastaviPoslednjeOdgovaranje"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": 50,
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.Execute",
+                                                    "title": "Zameni ID tabele",
+                                                    "verb": "zamenaIDTabele"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

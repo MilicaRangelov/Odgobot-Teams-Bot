@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.14",
+    "version": "1.0.0",
+    "id": "d724b96e-3fc9-4bac-8a96-08fd27e0e49b",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/termofuse",
+        "termsOfUseUrl": "https://www.example.com/privacy"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "Odgobot",
+        "full": "Odgobot"
+    },
+    "description": {
+        "short": "Ovo je bot koji pomaže studentima i profesorima pri odgovaranju!",
+        "full": "Ovo je bot koji pomaže studentima i profesorima pri odgovaranju!"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "6fb590ba-d64a-4be2-a4ab-fb49fe7d2ce9",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "student",
+                            "description": "Pozivaj bota kao student"
+                        },
+                        {
+                            "title": "profesor",
+                            "description": "Pozivaj bota kao profesor"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ]
+}
